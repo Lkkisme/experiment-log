@@ -1,1 +1,12 @@
-Day 1: Setup complete.
+Exercise 2 — What does git status show before staging, after staging, and after committing?
+Before staging, git status shows notes.txt under Untracked files, meaning Git sees the file but it is not being tracked yet. After staging (git add notes.txt), it appears under Changes to be committed, meaning it is in the staging area. After committing, git status shows nothing to commit, working tree clean, meaning the change has been saved into the commit history.
+
+Exercise 4 — What happened? Where do the browser edits appear?
+After I edited notes.txt on GitHub in the browser and committed the change, running git pull in Colab downloaded that new commit and updated my local repository. The browser edits appear directly inside my local notes.txt file (verified by opening the file or running cat notes.txt). The new commit also appears in git log.
+
+Exercise 5 — How can I view a list of commits?
+Command I ran:
+git log --oneline --decorate --graph -n 10
+
+What I learned (reflection):
+This command shows the commit history in a compact form and also displays branch pointers like HEAD, main, and origin/main. It helps me understand which commits are on which branch and how branches relate to each other.
