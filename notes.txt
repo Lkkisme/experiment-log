@@ -1,2 +1,1 @@
 My first GitHub notes from Colab.
-Edited from GitHub interface.
